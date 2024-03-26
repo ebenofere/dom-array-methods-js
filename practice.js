@@ -17,6 +17,7 @@ async function getRandomUser() {
   const data = await res.json();
 
   const user = data.results[0];
+  console.log(user, "user")
 
   const newUser = {
     name: `${user.name.first} ${user.name.last}`,
